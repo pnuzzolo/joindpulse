@@ -1,70 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DPULSE | The Debate Starts Here</title>
-<style>
-:root{--bg:#08111f;--card:#111d31;--accent:#4ea3ff;--text:#eef4ff;--muted:#b9c5d8}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,#08111f,#0f1c31);color:var(--text)}
-header{display:flex;justify-content:space-between;align-items:center;padding:24px 8%;position:sticky;top:0;background:rgba(8,17,31,.75);backdrop-filter:blur(8px)}
-.logo{font-weight:800;font-size:2rem;color:var(--accent)}
-nav a{color:var(--muted);text-decoration:none;margin-left:18px}
-.hero{min-height:88vh;display:flex;align-items:center;justify-content:center;padding:40px 8%;text-align:center}
-.hero h1{font-size:clamp(2.6rem,7vw,5rem);margin:.2em 0}
-.hero p{max-width:760px;margin:auto;font-size:1.2rem;color:var(--muted);line-height:1.6}
-.btn{display:inline-block;margin-top:30px;padding:16px 30px;border-radius:12px;background:var(--accent);color:white;text-decoration:none;font-weight:700}
-section{padding:70px 8%}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
-.card{background:var(--card);padding:24px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
-.card h3{margin-top:0}
-.waitlist{max-width:700px;margin:auto;text-align:center}
-input{width:100%;padding:16px;border-radius:10px;border:none;margin:18px 0}
-button{padding:16px 28px;border:none;border-radius:10px;background:var(--accent);color:white;font-weight:700;cursor:pointer}
-footer{text-align:center;padding:40px;color:var(--muted)}
-.small{color:var(--muted)}
-</style>
+<title>DPULSE | Every Opinion Has Two Sides.</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-<div class="logo">DPULSE</div>
-<nav>
-<a href="#features">Features</a>
-<a href="#waitlist">Waitlist</a>
-</nav>
+<header class="nav">
+  <div class="logo">DPULSE</div>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#vision">Vision</a>
+    <a href="#waitlist">Waitlist</a>
+  </nav>
 </header>
 
 <section class="hero">
-<div>
-<p style="letter-spacing:3px;color:var(--accent)">COMING SOON</p>
-<h1>The Debate Starts Here.</h1>
-<p>DPULSE is a new social platform where people debate today's biggest topics, the community votes for the winner, and the best arguments rise to the top.</p>
-<a class="btn" href="#waitlist">Join the Waitlist</a>
+<div class="aurora"></div>
+<div class="hero-inner">
+<p class="eyebrow">COMING SOON</p>
+<h1>Every Opinion Has Two Sides.<br>Every Debate Has One Winner.</h1>
+<p class="lead">Politics. Technology. Sports. Entertainment. Culture. DPULSE is where ideas compete and the strongest arguments rise to the top.</p>
+<a class="button" href="#waitlist">Join the Waitlist</a>
 </div>
 </section>
 
-<section id="features">
+<section id="features" class="section">
 <h2>Why DPULSE?</h2>
-<div class="grid">
-<div class="card"><h3>🎙 Debate</h3><p>Create or join debates about politics, sports, entertainment and culture.</p></div>
-<div class="card"><h3>🗳 Vote</h3><p>The community decides who presented the strongest argument.</p></div>
-<div class="card"><h3>🏆 Compete</h3><p>Earn credibility, climb leaderboards and build your reputation.</p></div>
+<div class="cards">
+<div class="card"><h3>Structured Debate</h3><p>Arguments compete on merit instead of who shouts the loudest.</p></div>
+<div class="card"><h3>Community Voting</h3><p>Every debate ends with a winner chosen by the community.</p></div>
+<div class="card"><h3>Build Reputation</h3><p>Great thinkers earn credibility over time.</p></div>
 </div>
 </section>
 
-<section id="waitlist">
-<div class="waitlist">
-<h2>Be One of the First</h2>
-<p class="small">This demo stores nothing yet. We'll connect a real email service next.</p>
-<form onsubmit="event.preventDefault();alert('Thanks for your interest in DPULSE!');">
-<input type="email" placeholder="Enter your email">
+<section class="section alt">
+<h2>Trending Debate Ideas</h2>
+<div class="topics">
+<span>Should the Electoral College be abolished?</span>
+<span>Should AI-generated content be labeled by law?</span>
+<span>Should employees return to the office full-time?</span>
+<span>Are streaming services helping or hurting Hollywood?</span>
+<span>Should self-driving cars operate without a human driver?</span>
+</div>
+</section>
+
+<section id="vision" class="section">
+<h2>The Vision</h2>
+<blockquote>
+The internet forgot how to disagree.<br>
+<b>DPULSE brings debate back—with structure, competition and accountability.</b>
+</blockquote>
+</section>
+
+<section id="waitlist" class="section cta">
+<h2>Be There on Day One.</h2>
+<p>Reserve your place before launch.</p>
+<input placeholder="Your email address">
 <button>Notify Me</button>
-</form>
-</div>
 </section>
 
-<footer>© 2026 DPULSE • JoinDPulse.com</footer>
+<footer>© 2026 DPULSE</footer>
+<script src="script.js"></script>
 </body>
 </html>
