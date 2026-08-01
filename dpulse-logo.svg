@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="170" viewBox="0 0 700 170">
+  <rect width="700" height="170" fill="#050914"/>
+  <text x="350" y="78"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="64"
+        font-weight="700"
+        letter-spacing="3"
+        fill="white">DPULSE</text>
+  <text x="598" y="44"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="16"
+        fill="white">™</text>
+  <path d="M170 120 Q350 88 530 120"
+        fill="none"
+        stroke="#2f8cff"
+        stroke-width="4"/>
+</svg>
